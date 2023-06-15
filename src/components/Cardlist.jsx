@@ -6,19 +6,24 @@ import dochanashvilipic from '../assets/dochanashvili.jpg';
 // import mixopic from '../assets/mixo.jpg'
 
 const data = [
-    {id:1, name:'ნოდარ დუმბაძე',  image:dumbadzepic},
-    {id:2, name:'ნოდარ დუმბაძე',  image:dumbadzepic},
-    {id:3, name:'გურამ დოჩანაშვილი',  image:dochanashvilipic},
-    {id:4, name:'გურამ დოჩანაშვილი',  image:dochanashvilipic}
+    {id:1, name:'ნოდარ დუმბაძე',  image:dumbadzepic, description:`"თქვენც სუ და ჩვენც სუ"`},
+    {id:2, name:'ნოდარ დუმბაძე',  image:dumbadzepic, description: '"ჰელადოს"'},
+    {id:3, name:'გურამ დოჩანაშვილი',  image:dochanashvilipic, description: '"კაცი რომელსაც ძლიერ უყვარს ლიტერატურა"'},
+    {id:4, name:'გურამ დოჩანაშვილი',  image:dochanashvilipic, description: '"ერთი რამის სიყვარული დამალვა რომ ჭირდება"'}
 ]
 const Cardlist = () => {
     function action(name) {
-        alert(`${name}: "თქვენც სუ და ჩვენც სუ"`)
+        alert(`ავტორი: ${name}`)
     }
   return (
     <div className='card-list'>
 
-        {data.map((card) => <Cards key={card.id} name={card.name} image={card.image} action={action}/>)}
+        {data.map((card) => <Cards 
+              key={card.id} 
+              name={card.name} 
+              image={card.image} 
+              action={action} 
+              description={card.description}/>)}
         
       {/* <Cards name = 'Alex' description = 'my name is' image={alexpic} action={action}/>
       <Cards name = 'David' description = 'my name is' image={davidpic} action={action}/>

@@ -4,6 +4,8 @@
   width: 275px;
   border: 1px solid black;
   align-items: center;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.148);
 }
 
 .card-title {
@@ -42,4 +44,7 @@
   text-transform: uppercase;
   margin: 5px;
   cursor: pointer;
+  border-radius: 0 0 15px 15px;
+  margin-bottom: 0;
 }
+
