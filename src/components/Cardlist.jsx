@@ -1,16 +1,13 @@
 import '../App.css';
 import Cards from '../components/Cards';
 import dumbadzepic from '../assets/dumbadze.jpg';
-// import dumbadzepic from '../assets/dumbadze.jpg';
-import dochanashvilipic from '../assets/dochanashvili.jpg';
-// import mixopic from '../assets/mixo.jpg'
+
 
 const data = [
     {id:1, name:'ნოდარ დუმბაძე',  image:dumbadzepic, description:`"თქვენც სუ და ჩვენც სუ"`},
-    {id:2, name:'ნოდარ დუმბაძე',  image:dumbadzepic, description: '"ჰელადოს"'},
-    {id:3, name:'გურამ დოჩანაშვილი',  image:dochanashvilipic, description: '"კაცი რომელსაც ძლიერ უყვარს ლიტერატურა"'},
-    {id:4, name:'გურამ დოჩანაშვილი',  image:dochanashvilipic, description: '"ერთი რამის სიყვარული დამალვა რომ ჭირდება"'}
+   
 ]
+
 const Cardlist = () => {
     function action(name) {
         alert(`ავტორი: ${name}`)
